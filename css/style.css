@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logotip img{
+    height: 100px;
+    animation-name: img;
+    animation-iteration-count: infinite;
+    animation-duration: 0.1s;
+}
+
+@keyframes img{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.menu ul{
+display: flex;
+gap: 7rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    animation-name: text;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes text{
+    from{
+        color: rgb(255, 0, 0);
+    }
+    to{
+        color: rgba(17, 0, 255, 0.315);
+    }
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo h1{
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes logo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:420px){
+    .header{
+        height: 200px;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu a{
+        line-height: 30px;
+    }
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bluk {
+    height: 650px;
+    background-color: yellow;
+}
+.bluk1 {
+    margin-left: 600px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(51, 255, 0);
+
+    top: 0;
+    left: 0;
+    position: relative;
+
+    animation-name: mut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ 
+}
+
+@keyframes mut {
+    0% {
+        top: 0;left: 600;
+        background-color: rgb(255, 0, 0);
+        border-radius: 25px;
+    }
+    25% {
+        top: 0;left: 600px;
+        background-color: rgb(17, 0, 255);
+    }
+    50% {
+        top: 500px;left: 600px;
+        background-color: rgb(255, 0, 200);
+        
+    }
+    75% {
+        top: 500px;left: 0;
+        background-color: rgb(19, 19, 19);
+        border-radius: 95px;
+    }
+}
+
+@media (max-width:420px){
+    
+}
